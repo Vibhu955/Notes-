@@ -1,0 +1,80 @@
+.icons {
+    display: flex;
+}
+.form{
+    font-weight: bolder;
+    background-color: rgb(209, 183, 173);
+    /* background-color: rgb(210, 176, 135); */
+    box-shadow: 10px 10px 20px black;
+}
+.icons i {
+    position: absolute;
+    right: 0;
+    padding: 10px;
+    margin-right: 26vw;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+.arrow {
+    top: 55vh;
+    font-size: 8rem;
+    position: absolute;
+    animation: signup 1s ease-in-out 0s infinite;
+}
+
+.msg {
+    font-size: large;
+    color: dimgray;
+    display: flex;
+    padding-top: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.header button:focus {
+    box-shadow: none;
+}
+
+.header button:active {
+    border: 2px solid transparent;
+}
+
+i:active {
+    border: 1px solid transparent;
+}
+
+.nav .end {
+    position: absolute;
+    right: 1rem;
+}
+
+.form input:active {
+    position: relative;
+    animation: mymove 1s linear 0s 4;
+}
+
+@keyframes mymove {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(0.5deg);
+    }
+}
+
+@keyframes signup {
+    from {
+        color:black;
+        left: 85vw;
+    }
+
+    to {
+        color: brown;
+        left: 65vw;
+    }
+}
